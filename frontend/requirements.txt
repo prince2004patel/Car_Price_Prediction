@@ -6,7 +6,3 @@ pandas==2.2.3
 requests==2.32.3
 streamlit==1.40.1
 gunicorn==23.0.0
-<<<<<<< HEAD
-
-=======
->>>>>>> 6599bcc4c749d7e00d48e4890c6090c4de9a9035
