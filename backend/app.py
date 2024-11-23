@@ -8,9 +8,9 @@ app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 
 # Load pre-trained model and preprocessing tools using joblib
-preprocessor = joblib.load('../backend/preprocessor.joblib')
-model = joblib.load('../backend/random_forest_model.joblib')
-le = joblib.load('../backend/label_encoder.joblib')
+preprocessor = joblib.load('./preprocessor.joblib')
+model = joblib.load('./random_forest_model.joblib')
+le = joblib.load('./label_encoder.joblib')
 
 @app.route('/predict', methods=['POST'])
 def predict():
@@ -59,4 +59,4 @@ def predict():
         return jsonify({'error': str(e)})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0', port=int(os.environ.get("PORT", 5000)))
