@@ -41,7 +41,7 @@ if section == "Prediction":
 
         # Make POST request to Flask backend
         response = requests.post(
-            "http://127.0.0.1:5000/predict", 
+            "https://car-price-prediction-backend.onrender.com/predict", 
             json=input_data
         )
 
