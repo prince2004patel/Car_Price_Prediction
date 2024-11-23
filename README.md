@@ -4,7 +4,7 @@ This project is a web application that predicts the price of a car based on feat
 
 ## Live Deployment Link
 
-- [Car Price Prediction](https://car-price-prediction-frontend.onrender.com/)
+- **Car Price Prediction Web App**: <a href="https://car-price-prediction-frontend.onrender.com" target="_blank">Click here to visit the app</a>
 
 ## Key Features
 
