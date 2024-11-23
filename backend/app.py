@@ -1,22 +1,16 @@
 from flask import Flask, request, jsonify
-import pickle
+import joblib
 import pandas as pd
-import gzip
 from flask_cors import CORS  # For enabling CORS support
 
 # Initialize Flask app
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 
-# Load pre-trained model and preprocessing tools using gzip
-with gzip.open('random_forest_model.pkl.gz', 'rb') as f:
-    model = pickle.load(f)
-
-with gzip.open('preprocessor.pkl.gz', 'rb') as f:
-    preprocessor = pickle.load(f)
-
-with gzip.open('label_encoder.pkl.gz', 'rb') as f:
-    le = pickle.load(f)
+# Load pre-trained model and preprocessing tools using joblib
+preprocessor = joblib.load('../backend/preprocessor.joblib')
+model = joblib.load('../backend/random_forest_model.joblib')
+le = joblib.load('../backend/label_encoder.joblib')
 
 @app.route('/predict', methods=['POST'])
 def predict():

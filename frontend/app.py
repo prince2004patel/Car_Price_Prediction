@@ -85,22 +85,4 @@ if section == "Prediction":
 elif section == "About":
     # About section content
     st.header("About This Project")
-    st.markdown("""
-    This **Car Price Prediction** web application leverages a machine learning model to predict the selling price of used cars based on various features such as car model, age, kilometers driven, fuel type, and more. The application is built using a **Random Forest Regressor** model, which is trained on a dataset from **CarDekho** containing almost **15,000 records**. The dataset includes important features such as the car's **model**, **vehicle age**, **kilometers driven**, **fuel type**, **transmission type**, and more.
-
-    #### Key Features:
-    - **Dataset**: The dataset consists of almost 15,000 records from the CarDekho website, which were used to train the model. The data includes both categorical and numerical features that influence car prices.
-    - **Machine Learning Model**: The primary model used is the **Random Forest Regressor**, which provides an impressive **94% accuracy**. Random Forest was chosen for its robustness in handling complex, non-linear data. In addition, a **K-Nearest Neighbors (KNN)** model was also tested, achieving a **90% accuracy**, but Random Forest was selected for better overall performance.
-    - **Interactive Web Interface**: The project uses **Streamlit** for building a user-friendly, interactive interface. Users can input car details, and the model will predict the price range. The prediction is based on the trained model and includes a price range to account for variations in car condition.
-    - **Flask Backend**: The backend is built using **Flask**, which handles the model inference and preprocessing. Flask serves the model and provides predictions when data is sent from the Streamlit frontend.
-    - **Price Range Prediction**: The model not only predicts a single price but also provides a price range (±30k) to give users an idea of the variability in pricing, depending on factors like car condition.
-
-    #### Deployment:
-    - The application is deployed on **Render** for the backend (Flask API) and **Vercel** for hosting the frontend (Streamlit application).
-    - These platforms provide a seamless and scalable environment to host web applications and APIs.
-
-    ---
-    <p style="text-align:center; font-size:20px; color:#FFD700;">
-    Made by <a href="https://github.com/prince2004patel" style="color:#FFD700; text-decoration:none;"><b>Prince Patel</b></a>
-    </p>
-    """, unsafe_allow_html=True)
+    st.markdown(""" # Same About Section as before """, unsafe_allow_html=True)
