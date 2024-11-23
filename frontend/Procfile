@@ -1,1 +1,2 @@
-web: gunicorn frontend.app:app
+web: serve -s build
+
