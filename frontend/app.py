@@ -96,7 +96,7 @@ elif section == "About":
     - **Price Range Prediction**: The model not only predicts a single price but also provides a price range (±30k) to give users an idea of the variability in pricing, depending on factors like car condition.
 
     #### Deployment:
-    - The application is deployed on **Render** for the backendand .
+    - The application is deployed on **Render** (for deploying both frontend and backend).
     - These platforms provide a seamless and scalable environment to host web applications and APIs.
 
     ---
