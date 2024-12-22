@@ -1,4 +1,4 @@
-# First End-to-End Car Price Prediction Web App Using Machine Learning
+# Car Price Prediction Web App Using Machine Learning
 
 This project is a web application that predicts the price of a car based on features such as car model, vehicle age, mileage, and more. It uses machine learning to provide accurate car price predictions. The backend is powered by Flask, and the frontend uses Streamlit for an interactive user experience.
 
